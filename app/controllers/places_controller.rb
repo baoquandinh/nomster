@@ -4,4 +4,8 @@ class PlacesController < ApplicationController
         # Notes on how to use will_paginate
         @places = Place.all.paginate(:page => params[:page], :per_page => 2)
     end
+
+    def new
+        @place = Place.new
+    end
 end
