@@ -2,11 +2,14 @@
     <h1>
         <%= @place.name%>
     </h1>
-    <h1>
+    <i>
         <%= @place.address%>
-    </h1>
-    <br />
-    <h1>
+    </i>
+    <br /><br />
+    <p>
         <%= @place.description%>
-    </h1>
+    </p>
+    <div class="float-right">
+        <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
+    </div>
 </div>
